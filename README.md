@@ -2,7 +2,7 @@
 I was hired by an insurance agency to recreate and modernize their old wordpress site. This is the project that accomplishes just that.
 This is the first website project I have ever worked on. You can check the final and working product here: http://zastrahovam.eu/
 
-For this job there were a few requirements:
+For this job there were these requirements:
 - Users must have an easy way to any product the firm offers.
 - The pictures were to be fully licensed.
 - The website was required to work on most types of screens/devices/browsers.
@@ -14,6 +14,8 @@ For this job there were a few requirements:
 - In-page PDF viewer.
 - Form Captcha protection.
 - A "ThankYou" page with a timer.
+- MultiStep forms on some pages.
+- SEO Optimization
 ... and many more...
 
 To achieve the template/design freedom we needed, I decided to create the project using the vanilla tools like HTML/CSS/JS and build this site from the ground up.
@@ -36,6 +38,8 @@ Here are some of the mobile screenshots:
 ![image](https://user-images.githubusercontent.com/72268734/209376018-994fdf6a-9d7e-4aad-8856-a79c9b778958.png)
 ![image](https://user-images.githubusercontent.com/72268734/209376053-184293a2-daea-43bc-bfd3-f2843128f7b5.png)
 ![image](https://user-images.githubusercontent.com/72268734/209376100-d8f89f05-ac00-4f73-8454-ea9a5191be37.png)
+![image](https://user-images.githubusercontent.com/72268734/209376824-8ba43a06-76b6-48a7-be99-77066172a0fa.png)
+
 
 
 Tools/Plugins I used:
