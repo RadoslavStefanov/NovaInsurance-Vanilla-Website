@@ -50,3 +50,6 @@ Tools/Plugins I used:
 - Call plugin
 - freecallinc.com (free calls plugin)
 - Codepen.io (Ideas and free source - code)
+
+
+*Actual Images and licenced materials are not uploaded!*
