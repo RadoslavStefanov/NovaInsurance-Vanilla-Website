@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zastrahovam.eu</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ins-page.css">
+    <link rel="stylesheet" href="../styles/ins-pages-media.css">
+  </head>
+  <body>
+    <img alt="image" loading="lazy" id="background" src="../images/background.jpg" alt="">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="vVIsldjL"></script>
+    <nav class="navbar nav-main navbar-expand-md sticky-top shadow-sm py-3 px-2 px-md-0">
+      <div class="container">
+        <button class="navbar-toggler shadow-none fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 d-flex py-3 py-md-0" style="justify-content: center;">
+            <li class="nav-item">
+              <a class="nav-link" href="../">НАЧАЛО</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ЗАСТРАХОВКИ </a>
+              <ul class="dropdown-menu" style="left: -140%;" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./goInsPage.html">Гражданска отговорност</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./carInsPage.html">Автокаско</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./roadHelpPage.html">Помощ на пътя</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./homeInsPage.html">Имущество</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./medInsPage.html">Мед. застраховка за чужбина</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./lifeInsPage.html">Застраховка живот</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./cureInsPage.html">Лечение без граници</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./otherInsPage.html">Други застраховки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" style="height: 20px;margin-right: 13rem;">
+              <a href="../">
+                <img alt="image" loading="lazy" class="navbar-brand" src="../images/NOVA-MAIN-LOGO.png">
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> УСЛУГИ </a>
+              <ul class="dropdown-menu" style="left: 15%;" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./paymentPage.html">Плати вноска по полица</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./carGradingPage.html">Застахователна оценка на МПС</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./docEditPage.html">Промяна на данни по полица</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://www.zastrahovam.bg/wp-content/uploads/2020/02/protokol-ptp.pdf" target="_blank">Изтегли протокол за ПТП</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="http://eisoukr.guaranteefund.org/" target="_blank">Провери валидност на ГО</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./obbCreditPage.html">Съдействие за кредит от ОББ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactsPage.html">КОНТАКТИ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-mobile">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <div class="accordion" id="accordionExample">
+            <a href="../">
+              <button class="accordion-button no-after" type="button">НАЧАЛО</button>
+            </a>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#insurance-mnav" aria-expanded="true" aria-controls="collapseOne"> ЗАСТРАХОВКИ </button>
+              </h2>
+              <div id="insurance-mnav" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <a href="./goInsPage.html">
+                    <button type="button" class="btn btn-warning">ГРАЖДАНСКА ОТГОВОРНОСТ</button>
+                  </a>
+                  <a href="./carInsPage.html">
+                    <button type="button" class="btn btn-warning">АВТОКАСКО</button>
+                  </a>
+                  <a href="./roadHelpPage.html">
+                    <button type="button" class="btn btn-warning">ПОМОЩ НА ПЪТЯ</button>
+                  </a>
+                  <a href="./homeInsPage.html">
+                    <button type="button" class="btn btn-warning">ИМУЩЕСТВО</button>
+                  </a>
+                  <a href="./medInsPage.html">
+                    <button type="button" class="btn btn-warning">МЕД. ЗАСТРАХОВКА ЗА ЧУЖБИНА</button>
+                  </a>
+                  <a href="./lifeInsPage.html">
+                    <button type="button" class="btn btn-warning">ЗАСТРАХОВКА ЖИВОТ</button>
+                  </a>
+                  <a href="./cureInsPage.html">
+                    <button type="button" class="btn btn-warning">ЛЕЧЕНИЕ БЕЗ ГРАНИЦИ</button>
+                  </a>
+                  <a href="./otherInsPage.html">
+                    <button type="button" class="btn btn-warning">ДРУГИ</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#services-mnav" aria-expanded="true" aria-controls="collapseOne"> УСЛУГИ </button>
+              </h2>
+              <div id="services-mnav" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <a href="./paymentPage.html">
+                    <button type="button" class="btn btn-warning">ПЛАТИ ВНОСКА ПО ПОЛИЦА</button>
+                  </a>
+                  <a href="./carGradingPage.html">
+                    <button type="button" class="btn btn-warning">ЗАСТРАХОВАТЕЛНА ОЦЕНКА НА МПС</button>
+                  </a>
+                  <a href="./docEditPage.html">
+                    <button type="button" class="btn btn-warning">ПРОМЯНА НА ДАННИ ПО ПОЛИЦА</button>
+                  </a>
+                  <a href="https://www.zastrahovam.bg/wp-content/uploads/2020/02/protokol-ptp.pdf" target="_blank">
+                    <button type="button" class="btn btn-warning">ИЗТЕГЛИ ПРОТОКОЛ ЗА ПТП</button>
+                  </a>
+                  <a href="http://eisoukr.guaranteefund.org/" target="_blank">
+                    <button type="button" class="btn btn-warning">ПРОВЕРИ ГРАЖ. ОТГОВОРНОСТ</button>
+                  </a>
+                  <a href="./obbCreditPage.html">
+                    <button type="button" class="btn btn-warning">СЪДЕЙСТВИЕ ПРИ КРЕДИТ ОТ ОББ</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="./contactsPage.html">
+              <button class="accordion-button no-after" type="button">КОНТАКТИ</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="../">
+            <img alt="image" loading="lazy" class="navbar-brand" src="../images/NOVA-MAIN-LOGO.png">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="position-relative marquee-container d-none d-sm-block">
+      <div class="marquee d-flex justify-content-around">
+        <img alt="image" loading="lazy" src="../images/slider/allianz-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/armeec-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/dzi-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/bulins-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/bulstrad-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/dallbog-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/euroins-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/generali-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/groupama-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/levins-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/ozk-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/uniqa-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/obb-slider.jpg">
+      </div>
+    </div>
+    <div id="banner" style="background-image: url(../images/pages/carInsPage/banner.jpg); background-position: 0% 20%;"></div>
+			<section id="firstSection">
+      <div class="insurance-main">
+        <div class="ins-left ins">
+          <div class="banner-header">
+            <p class="ins-p-banner">ДРУГИ УСЛУГИ </p1>
+          </div>
+          <div class="banner-body">
+            <p>Тук можете бързо да достъпите други често търсени продукти.</p>
+            <ul>
+              <li>
+                <a href="./goInsPage.html">Гражданска отговорност</a>
+                <button>
+                  <i class="fa-solid fa-car"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./carGradingPage.html">Оценка МПС</a>
+                <button>
+                  <i class="fa-solid fa-car-on"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./roadHelpPage.html">Помощ на пътя</a>
+                <button>
+                  <i class="fa-solid fa-car-burst"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./medInsPage.html">Мед. застраховка за чужбина</a>
+                <button>
+                  <i class="fa-solid fa-laptop-medical"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./lifeInsPage.html">Застраховка "ЖИВОТ"</a>
+                <button>
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./homeInsPage.html">Имущество</a>
+                <button>
+                  <i class="fa-solid fa-house-chimney-user"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./docEditPage.html">Промяна в полица</a>
+                <button>
+                  <i class="fa-solid fa-file-signature"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./obbCreditPage.html">Кредит от ОББ</a>
+                <button>
+                  <i class="fa-solid fa-sack-dollar"></i>
+                </button>
+              </li>
+              <li>
+                <a href="http://eisoukr.guaranteefund.org/" target="_blank">Провери ГО</a>
+                <button>
+                  <i class="fa-brands fa-searchengin"></i>
+                </button>
+              </li>
+              <li>
+                <a href="https://www.zastrahovam.bg/wp-content/uploads/2020/02/protokol-ptp.pdf" target="_blank">Протокол ПТП</a>
+                <button>
+                  <i class="fa-solid fa-file-lines"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./paymentPage.html">Плати вноска</a>
+                <button>
+                  <i class="fa-regular fa-money-bill-1"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ins-center ins">
+          <div class="page-header">
+            <img alt="image" loading="lazy" class="ins-header" src="../images/NOVA-MAIN-LOGO.png">
+            <p class="ins-p-head">АВТОКАСКО </p1>
+          </div>
+          <div class="ins-description">
+            <img alt="image" loading="lazy" src="../images/pages/carInsPage/aside.jpg" alt="">
+            <div class="ins-description-text">
+              <ul>
+                <li>Пътно-транспортни произшествия</li>
+                <li>Щети в паркирано състояние</li>
+                <li>Кражба и грабеж на цялото МПС</li>
+                <li>Злоумишлени действия на трети лица</li>
+                <li>Пожар и/или експлозия от различни източници</li>
+                <li>Природни бедствия</li>
+                <li>Други, настъпили не по волята на водача щети</li>
+                <li>Допълнително покритие БОНУС от нас</li>
+              </ul>
+              <div class="buttons-holder" style="text-align: center;">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#ins-modal" class="btn btn-success" style="margin-right: 5%;">ЗАЯВИ СЕГА</button>
+                <a href="#infoHeader" type="button" class="btn btn-warning" style="margin-left: 5%;">ИНФОРМАЦИЯ</a>
+              </div>
+            </div>
+          </div>
+          <div class="ins-advantages">
+            <ul>
+              <li style="rotate: -4deg;">
+                <i class="fa-solid fa-disease"></i>
+                <p>Лесно</p>
+              </li>
+              <li style="rotate: 5deg;">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <p>Бързо</p>
+              </li>
+              <li style="rotate: -13deg;">
+                <i class="fa-solid fa-user-shield"></i>
+                <p>Сигурно</p>
+              </li>
+              <li style="rotate: 12deg;">
+                <i class="fa-solid fa-people-arrows"></i>
+                <p>Удобно</p>
+              </li>
+              <li style="rotate: -20deg;">
+                <i class="fa-solid fa-wallet"></i>
+                <p>Евтино</p>
+              </li>
+            </ul>
+          </div>
+          <div class="shadow-extender"></div>
+          <h1 id="infoHeader">Иформация за услугата</h1>
+          <div class="accordion accordion-flush" id="infoAccordion">
+            <div class="accordion-item" onclick="slideToElement('#infoHeader')">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> ОСНОВНА ИНФОРМАЦИЯ </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#infoAccordion">
+                <div class="accordion-body">
+                  <div style="height: auto; transition: height 400ms linear 0s; overflow: hidden;">
+                    <div>
+                      <p>Доброволна застраховка, предназначена за собственици и ползватели на моторни превозни средства (МСП) с български регистрационни
+                        номера: леки и товарни автомобили, багажни и къмпинг ремаркета, товарни ремаркета и полуремаркета, автобуси, земеделска и горска
+                        техника, строителни и пътно-строителни машини, специални автомобили, мотоциклети.
+                        Към автомобилна застраховка „Каско+“ може да сключите застраховка "Помощ на пътя“ и застраховка „Злополука на лицата в МПС”.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" onclick="slideToElement('#infoHeader')">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> ПОЛУЧАВАНЕ НА ПОЛИЦАТА </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#infoAccordion">
+                <div class="accordion-body">
+                  <div style="height: auto; transition: height 400ms linear 0s; overflow: hidden;">
+                    <div>
+                      <p>След успешно заплащане на вноската по полицата ще се свържем с Вас, за да уточним най-лесния и удобен начин за получаването на необходимите документи! <br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" onclick="slideToElement('#infoHeader')">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> ДОКУМЕНТИ </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#infoAccordion">
+                <div class="accordion-body">
+                  <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                    <div class="responsive-wrapper 
+                       responsive-wrapper-wxh-572x612"
+                       style="-webkit-overflow-scrolling: touch; overflow: auto;">
+                      <iframe src="../files/serviceFiles/CarInsurance-ZastrahovamEU.pdf"> 
+                        <p style="font-size: 110%;">
+                          <em>
+                          <strong>
+                            ERROR: 
+                          </strong>  
+                          An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.
+                        </p>
+                      </iframe>
+                    </div>
+                    <p style="text-align: center; margin-top: 5px;">
+                      Не виждате визуализацията на файла? Изтеглете го от <a href="../files/serviceFiles/CarInsurance-ZastrahovamEU.pdf" style="color: #f69d26; font-weight: 600;"  download="CarInsurance-ZastrahovamEU.pdf">тук,</a> или го разгледайте от този <a href="../files/serviceFiles/CarInsurance-ZastrahovamEU.pdf" style="color: #f69d26; font-weight: 600;" target="_blank">линк.</a>
+                    </p>
+                  </div>
+                  <div class="card IframeAlt" style="width: 18rem;">
+                    <img alt="image" loading="lazy" src="../images/ins-page-constants/file.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Информационен документ</h5>
+                      <p class="card-text">Можете да изтеглите този документ, за да се запознаете напълно с предлаганата услуга.</p>
+                      <div class="cardBtns">
+                        <a href="../files/serviceFiles/CarInsurance-ZastrahovamEU.pdf" download class="btn btn-primary">ИЗТЕГЛИ</a>
+                        <a href="../files/serviceFiles/CarInsurance-ZastrahovamEU.pdf" target="_blank" class="btn btn-primary">РАЗГЛЕДАЙ</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ins-right ins">
+          <div class="banner-header">
+            <p class="ins-p-banner">ВРЪЗКА С НАС </p1>
+          </div>
+          <div class="banner-body ins-banner-socials">
+            <p>Имате обратен отзив, запитване, желаете друг вид услуга? Използвайте тези връзки за бърз контакт с нас!</p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/zastrahovam.bg" target="_blank">Facebook <br>
+                  <small>facebook.com/zastrahovam.bg</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/ins-page-constants/socials-icons/facebook.png" alt="facebook">
+              </li>
+              <li>
+                <a href="https://www.instagram.com/zastrahovam.bg/" target="_blank">Instagram <br>
+                  <small>instagram.com/zastrahovam.bg</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/ins-page-constants/socials-icons/instagram.png" alt="instagram">
+              </li>
+              <li>
+                <a>Електронна поща <br>
+                  <small>zastrahovam.eu@gmail.com</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/ins-page-constants/socials-icons/gmail.png" alt="gmail">
+              </li>
+              <li>
+                <a href="tel: +359 88 3486940">Мобилен номер <br>
+                  <small>+359 88 348 6940</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/ins-page-constants/socials-icons/call.png" alt="call">
+              </li>
+            </ul>
+            <p style="margin: 50% 0 0 0;">Свържете се с нас или заповядайте на място в нашите офиси. <br> Работно време 08:30-18:00ч. </p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="thirdSections">
+        <div class="map-holder">
+          <h1>НАШИТЕ ОФИСИ</h1>
+          <div class="frame-holder">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=%D0%9D%D0%9E%D0%92%D0%90%20%D0%B7%D0%B0%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%BD%D0%B0%20%D0%90%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%8F&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                  }
+
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/zastrahovam.bg" data-show-posts="true" data-width="300" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/zastrahovam.bg" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/zastrahovam.bg">НОВА Застрахователна Агенция</a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="footer">
+        <footer class="site-footer">
+          <div class="">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>Относно</h6>
+                <p class="text-justify">През интернет страницата на НОВА Застрахователна Агенция може БЪРЗО и ЛЕСНО да поръчате всеки вид застраховки, независимо дали са за физическо или юридическо лице. Работим с повечето застрахователни компании в страната и предлагаме всички застрахователни продукти.</p>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <h6>Най-продавани</h6>
+                <ul class="footer-links">
+                  <li>
+                    <a href="./goInsPage.html">Гражданска отговорност</a>
+                  </li>
+                  <li>
+                    <a href="./carInsPage.html">Автокаско</a>
+                  </li>
+                  <li>
+                    <a href="./homeInsPage.html">Имущество</a>
+                  </li>
+                  <li>
+                    <a href="./lifeInsPage.html">Застраховка ЖИВОТ</a>
+                  </li>
+                  <li>
+                    <a href="./cureInsPage.html">Лечение без граници <strong>ДЗИ</strong>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <h6>Бързи връзки</h6>
+                <ul class="footer-links">
+                  <li>
+                    <a href="tel: +359 88 3486940" style="color: #f69d26; font-weight: 600;">+359 88 3486940</a>
+                  </li>
+                  <li>
+                    <a href="./contactsPage.html">Контакти</a>
+                  </li>
+                  <li>
+                    <a href="./gdprPage.html">Правна информация</a>
+                  </li>
+                  <li>
+                  <a class="cookieModalTrigger" data-bs-toggle="modal" data-bs-target="#cookieModal">Бисквитки</a>
+                </li>
+                  <li>
+                    <a href="https://github.com/RadoslavStefanov">УЕБ Разработка</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <div class="row social-row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 202X All Rights Reserved by <a href="#">DELLA MANAGEMENT Ltd</a>. </p>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li>
+                    <a class="facebook" href="https://www.facebook.com/zastrahovam.bg">
+                      <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dribbble" href="https://www.instagram.com/zastrahovam.bg/?hl=bg">
+                      <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Cookie Banner -->
+        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert"> 🍪 Този сайт използва бисквитки. Ще приемем, че нямате против, но ако желаете можете да откажете използването. <button type="button" class="btn btn-secondary btn-sm ms-3" data-bs-toggle="modal" data-bs-target="#cookieModal">Още</button>
+          <button type="button" class="btn btn-primary btn-sm ms-3" onclick="hideCookieBanner()"> Разбирам </button>
+        </div>
+        <!-- Cookie Modal -->
+        <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cookieModalLabel">🍪Информация за бисквитките🍪</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="cookieModalBody">
+                <h4>Общ преглед</h4>
+                <div class="cli-privacy-content-text" style="font-size: 0.8rem; margin-bottom: 15px;">Този сайт използва бисквитки, за да подобри вашето изживяване докато го разглеждате. От тези бисквитки, категоризираните като необходими се съхраняват във вашият браузър, защото са необходими за основните функционалности в сайта. Също така използваме бисквитки на трети страни, които помагат да анализираме и разберем как използвате сайта. Тези бисквитки ще се съхранят във вашия браузър само с вашето съгласие. Също така имате възможност да откажете ползването на тези бисквитки. Отказването от някои от тези бисквитки обаче може да повлияе на използването на сайта.</div>
+                <h4>Необходимите бисквитки</h4>
+                <div class="wt-cli-cookie-description" style="font-size: 0.8rem; margin-bottom: 15px;">Необходимите бисквитки са жизнено важни за да функционира както трябва този сайт. Тази категория осигурява основни функционалности и функции за сигурност на сайта. Тези бисквитки не съхраняват никакви лични данни.</div>
+                <h4>Функционалност</h4>
+                <div class="wt-cli-cookie-description" style="font-size: 0.8rem; margin-bottom: 15px;">В случай че откажете изпозлването, от вашия браузър ще бъдат премахнати САМО бисквитки произхождащи от zastrahovam.eu !</div>
+              </div>
+              <div class="modal-footer" style="justify-content: space-evenly;">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="clearSiteCookies()">Отказвам</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Разбирам</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ins-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-cont">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#ins-modal" style="position: absolute; right: 10px; top: 10px;">X</button>
+              <h1>Автокаско</h1>
+              <p>Попълнете тази форма и бързо заявете Вашата гражданска отговорност</p>
+              <form method="POST" action="https://formsubmit.co/zastrahovam.eu@gmail.com" enctype="multipart/form-data">
+                <input type="hidden" name="_next" value="https://zastrahovam.eu/pages/thankYouPage.html">
+                <input type="hidden" name="Страница произход" value="Застраховки -> Автокаско">
+                <div class="row">
+                  <div class="column">
+                    <label for="name" required>Име <p class="rec-s">*</p>
+                    </label>
+                    <input type="text" id="name" name="Име" placeholder="Вашето име тук:" required>
+                  </div>
+                  <div class="column">
+                    <label for="phone">Телефон за връзка <p class="rec-s">*</p>
+                    </label>
+                    <input type="phone" id="phone" name="Телефон за връзка" placeholder="Вашият тел. номер:" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <label for="contact">Лице на талона (снимка) <p class="rec-s">*</p>
+                    </label>
+                    <input class="form-control" name="Лице на талона" type="file" accept="image/png, image/jpeg" single required />
+                  </div>
+                  <div class="column">
+                    <label for="contact">Гръб на талона (снимка) <p class="rec-s">*</p>
+                    </label>
+                    <input class="form-control" name="Гръб на талона" type="file" accept="image/png, image/jpeg" single required />
+                  </div>
+                  <div class="column">
+                    <label for="contact">Допълнителна снимка 1
+                    </label>
+                    <input class="form-control" name="Допълнителна снимка 1" type="file" accept="image/png, image/jpeg" single />
+                  </div>
+                  <div class="column">
+                    <label for="contact">Допълнителна снимка 2
+                    </label>
+                    <input class="form-control" name="Допълнителна снимка 2" type="file" accept="image/png, image/jpeg" single />
+                  </div>
+                </div>
+                <div class="row" style="display: inline-block;">
+                  <div class="column">
+                    <label for="issue">Допълнителна информация</label>
+                    <textarea id="issue" name="Допълнителна информация" placeholder="Ако желаете, можете да предоставите допълнителна информация тук:" rows="3"></textarea>
+                  </div>
+                  <div class="row privacy-check">
+                    <input type="checkbox" id="carRegistration" value="МПС-то не е регистрирано по ЗДвП" name="ЗДвП">МПС-то не е регистрирано по ЗДвП</input>
+                  </div>
+                  <div class="row privacy-check">
+                    <input type="checkbox" id="privacy" value="Потребителят е запознат с политиката за поверителност" name="Политиката за поверителност" required>Запознат съм с политиката за поверителност и се съгласявам да получа обаждане/електронна поща с цел изпълнение на заявената от мен услуга. <p class="rec-s">*</p>
+                    </input>
+                  </div>
+                </div>
+                <div class="row button-row">
+                  <button type="submit">Изпращане</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <link rel="stylesheet" href="../styles/form.css">
+  <script src="../scripts/genericViewHelpers.js"></script>
+  
+</html>

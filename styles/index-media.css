@@ -1,0 +1,364 @@
+/* Index page MEDIAS */
+@media (max-width: 770px) {
+    #glassCardsHolder {
+       padding: 0;
+   }
+    #dg-chat-widget-holder {
+        bottom: 70px!important;
+        display: block;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+   }
+    .bottom-sticky {
+       display: flex;
+   }
+    .cb-button {
+       visibility: hidden;
+   }
+    .nav-mobile {
+        display: block;
+        text-align: center;
+   }
+   .nav-mobile a{
+    text-decoration: none;
+   }
+    .marquee-container {
+       display: block!important;
+   }
+    .marquee-container .marquee {
+       animation: marquee 30s linear infinite;
+   }
+    @keyframes marquee {
+        0% {
+            left: 100%;
+       }
+        100% {
+            left: -940%;
+       }
+   }
+    .navbar .container {
+        top:15%;
+        position: absolute;
+        padding: 0 15% 0 11%;
+        text-align: center;
+   }
+    .nav-main {
+       display: none;
+   }
+    .navbar {
+       align-content: center;
+        box-shadow: none;
+   }
+    .navbar-toggler {
+       background-color: #00000037;
+   }
+    .navbar-brand {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 1%;
+        top: -5%;
+   }
+    .no-after::after {
+       display: none!important;
+   }
+    .nav-mobile .bg-dark .accordion-button {
+        justify-content: space-evenly;
+        border-radius: 0!important;
+        background-color: #212529;
+        color: #ffb80f;
+        box-shadow: none;
+   }
+    .nav-mobile .bg-dark button::after {
+       margin-left: 40%;
+        position: absolute;
+   }
+    .accordion-button::after {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffb80f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")!important;
+        transform: rotate(-360deg)!important;
+   }
+    .nav-mobile .bg-dark {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-evenly;
+        padding: 10px 0 10px 0!important;
+   }
+    .accordion-item {
+        background-color: #212529;
+        color: aliceblue;
+   }
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: #ffb80f;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgb(255 184 15);
+   }
+    #insurance .accordion-body , #services .accordion-body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+   }
+    .nav-mobile .accordion-body a {
+       width: 100%;
+   }
+    .nav-mobile .accordion-body .btn-warning {
+       margin: 3px 3px 3px 3px;
+        width: 100%;
+   }
+}
+@media (max-width: 800px) {
+    .site-footer {
+       padding-top:18%!important;
+   }
+    .frame-holder {
+       flex-wrap: wrap;
+   }
+    .fb-page{
+       display: none!important;
+   }
+    #glassCardsHolder .title {
+        border-bottom-left-radius: 0px!important;
+        border-bottom-right-radius: 0px!important;
+   }
+    #glassCardsHolder .card {
+        border-bottom-left-radius: 0px!important;
+        border-bottom-right-radius: 0px!important;
+   }
+}
+@media (min-width: 2550px) {
+   .slider_frame{
+       display: none;
+   }
+}
+@media (max-width: 321px) {
+    #glassCardsHoldere{
+       width: 95vw;
+   }
+    #glassCardsHolder main{
+       padding: 0 2px 50px;
+        width: 90vw!important;
+   }
+}
+/************************************************************************************ GlassCards styles *******************************************************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+ #glassCardsHolder main {
+     padding: 0 10px 50px;
+}
+ #glassCardsHolder main .card{
+     background-position: 55% -25px;
+     background-size: contain;
+}
+ #glassCardsHolder .card {
+     border-radius: 16px;
+     margin: 0 auto;
+     width: 350px;
+     max-width: 100%;
+     min-height: 295px;
+     height: 295px;
+     box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+     overflow: hidden;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+ #glassCardsHolder .info {
+     position: relative;
+     width: 100%;
+     height: 305px;
+     background-color: #fff;
+     transform: translateY(100%) translateY(-88px) translateZ(0);
+     transition: transform 0.5s ease-out;
+}
+ #glassCardsHolder .info:before {
+     z-index: -1;
+     display: block;
+     position: absolute;
+     content: ' ';
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     filter: blur(10px);
+     background-size: cover;
+     opacity: 0.25;
+     transform: translateY(-100%) translateY(88px) translateZ(0);
+     transition: transform 0.5s ease-out;
+}
+ #glassCardsHolder .card:hover .info, .card:hover .info:before {
+     transform: translateY(0) translateZ(0);
+     cursor: pointer;
+}
+ #glassCardsHolder .headingStyledP {
+     margin: 0;
+     padding: 34px 0 18px 0;
+     font-size: 1.3rem;
+     padding-bottom: 35px;
+     line-height: 1;
+     font-weight: 500;
+     color: rgba(0, 0, 0, 0.87);
+     text-decoration: underline;
+     background-color: #aeaeae;
+}
+ #glassCardsHolder .description {
+     margin: 0;
+     padding: 24px;
+     font-size: 20px;
+     line-height: 1.5;
+     color:rgb(49, 49, 49);
+     text-decoration: none;
+}
+/* General layout and typography stuff */
+ #glassCardsHolder * {
+     box-sizing: border-box;
+     position: relative;
+     transition: all 0.3s ease;
+}
+ #glassCardsHolder body, header {
+     background: #fafafa;
+}
+ #glassCardsHolder header {
+     padding: 40px;
+     min-height: 200px;
+     text-align: center;
+     color: rgba(0, 0, 0, 0.87);
+}
+ #glassCardsHolder header > * {
+     max-width: 800px;
+     margin-left: auto;
+     margin-right: auto;
+}
+ #glassCardsHolder header > :last-child {
+     margin-bottom: 0;
+}
+ #glassCardsHolder h1 {
+     margin-bottom: 0.5em;
+     font-weight: inherit;
+     line-height: 1.2;
+     color: #1c5b72;
+     font-size: 2.618em;
+}
+ @media (min-width: 800px) {
+     #glassCardsHolder h1 {
+         font-size: 4.236em;
+         font-weight: 300;
+    }
+}
+ #glassCardsHolder p {
+     margin-bottom: 1.3em;
+     line-height: 1.618;
+}
+ @media (min-width: 800px) {
+     #glassCardsHolder p {
+         font-size: 1.3em;
+    }
+}
+ #glassCardsHolder a {
+     color: #e03616;
+     text-decoration: none;
+}
+/************************************************************************************ nonModal Form styles *******************************************************/
+/* src: https://www.youtube.com/watch?v=GU4sN7xxHkM */
+.form-cont *, .form-cont *:before, .form-cont *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.form-cont{
+    background-color: #ffffff;
+    min-width: 300px;
+    padding: 30px;
+    transform: translate(-50%,-0%);
+    position: relative;
+    left: 50%;
+    border-radius: 10px;
+}
+.form-cont h1{
+    font-size: 3.2rem!important;
+    text-align: center;
+    color: #2f2f2f!important;
+}
+.form-cont p{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #606060;
+    font-size: 1rem!important;
+    font-weight: 400;
+}
+.form-cont form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+.form-cont .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-cont label{
+    color: #1c093c;
+    font-size: 14px;
+}
+.form-cont textarea, .form-cont input{
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+}
+.form-cont textarea:focus, .form-cont input:focus{
+    outline: none;
+    border-color: #373737;
+}
+.form-cont button{
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(130deg, rgb(255 184 15), rgb(255 180 0));
+    color: #ffffff;
+    border-radius: 3px;
+}
+.button-row button {
+    margin: 0 auto;
+}
+select {
+    width: 100%;
+    font-weight: 400!important;
+    padding: 8px 10px!important;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px!important;
+}
+.privacy-check {
+    display: block!important;
+}
+.privacy-check [type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+}
+@media (max-width: 426px) {
+    .form-cont label {
+       float:left;
+   }
+    .form-cont input {
+        margin-top: 0;
+   }
+}
+@media (max-width: 321px) {
+    .form-cont {
+        min-width: none;
+        padding: 0;
+   }
+}
+
+img
+{content-visibility: auto}

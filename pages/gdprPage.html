@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zastrahovam.eu</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ins-page.css">
+    <link rel="stylesheet" href="../styles/ins-pages-media.css">
+  </head>
+  <body>
+    <img alt="image" loading="lazy" id="background" src="../images/background.jpg" alt="">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="vVIsldjL"></script>
+    <nav class="navbar nav-main navbar-expand-md sticky-top shadow-sm py-3 px-2 px-md-0">
+      <div class="container">
+        <button class="navbar-toggler shadow-none fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 d-flex py-3 py-md-0" style="justify-content: center;">
+            <li class="nav-item">
+              <a class="nav-link" href="../">НАЧАЛО</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ЗАСТРАХОВКИ </a>
+              <ul class="dropdown-menu" style="left: -140%;" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./goInsPage.html">Гражданска отговорност</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./carInsPage.html">Автокаско</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./roadHelpPage.html">Помощ на пътя</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./homeInsPage.html">Имущество</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./medInsPage.html">Мед. застраховка за чужбина</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./lifeInsPage.html">Застраховка живот</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./cureInsPage.html">Лечение без граници</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./otherInsPage.html">Други застраховки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" style="height: 20px;margin-right: 13rem;">
+              <a href="../">
+                <img alt="image" loading="lazy" class="navbar-brand" src="../images/NOVA-MAIN-LOGO.png">
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> УСЛУГИ </a>
+              <ul class="dropdown-menu" style="left: 15%;" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./paymentPage.html">Плати вноска по полица</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./carGradingPage.html">Застахователна оценка на МПС</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./docEditPage.html">Промяна на данни по полица</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Изтегли протокол за ПТП</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Провери валидност на ГО</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./obbCreditPage.html">Съдействие за кредит от ОББ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactsPage.html">КОНТАКТИ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-mobile">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <div class="accordion" id="accordionExample">
+            <a href="../">
+              <button class="accordion-button no-after" type="button">НАЧАЛО</button>
+            </a>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#insurance-mnav" aria-expanded="true" aria-controls="collapseOne"> ЗАСТРАХОВКИ </button>
+              </h2>
+              <div id="insurance-mnav" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <a href="./goInsPage.html">
+                    <button type="button" class="btn btn-warning">ГРАЖДАНСКА ОТГОВОРНОСТ</button>
+                  </a>
+                  <a href="./carInsPage.html">
+                    <button type="button" class="btn btn-warning">АВТОКАСКО</button>
+                  </a>
+                  <a href="./roadHelpPage.html">
+                    <button type="button" class="btn btn-warning">ПОМОЩ НА ПЪТЯ</button>
+                  </a>
+                  <a href="./homeInsPage.html">
+                    <button type="button" class="btn btn-warning">ИМУЩЕСТВО</button>
+                  </a>
+                  <a href="./medInsPage.html">
+                    <button type="button" class="btn btn-warning">МЕД. ЗАСТРАХОВКА ЗА ЧУЖБИНА</button>
+                  </a>
+                  <a href="./lifeInsPage.html">
+                    <button type="button" class="btn btn-warning">ЗАСТРАХОВКА ЖИВОТ</button>
+                  </a>
+                  <a href="./cureInsPage.html">
+                    <button type="button" class="btn btn-warning">ЛЕЧЕНИЕ БЕЗ ГРАНИЦИ</button>
+                  </a>
+                  <a href="./otherInsPage.html">
+                    <button type="button" class="btn btn-warning">ДРУГИ</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#services-mnav" aria-expanded="true" aria-controls="collapseOne"> УСЛУГИ </button>
+              </h2>
+              <div id="services-mnav" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <a href="./paymentPage.html">
+                    <button type="button" class="btn btn-warning">ПЛАТИ ВНОСКА ПО ПОЛИЦА</button>
+                  </a>
+                  <a href="./carGradingPage.html">
+                    <button type="button" class="btn btn-warning">ЗАСТРАХОВАТЕЛНА ОЦЕНКА НА МПС</button>
+                  </a>
+                  <a href="./docEditPage.html">
+                    <button type="button" class="btn btn-warning">ПРОМЯНА НА ДАННИ ПО ПОЛИЦА</button>
+                  </a>
+                  <a href="#">
+                    <button type="button" class="btn btn-warning">ИЗТЕГЛИ ПРОТОКОЛ ЗА ПТП</button>
+                  </a>
+                  <a href="#">
+                    <button type="button" class="btn btn-warning">ПРОВЕРИ ГРАЖ. ОТГОВОРНОСТ</button>
+                  </a>
+                  <a href="./obbCreditPage.html">
+                    <button type="button" class="btn btn-warning">СЪДЕЙСТВИЕ ПРИ КРЕДИТ ОТ ОББ</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="./contactsPage.html">
+              <button class="accordion-button no-after" type="button">КОНТАКТИ</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="../">
+            <img alt="image" loading="lazy" class="navbar-brand" src="../images/NOVA-MAIN-LOGO.png">
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="position-relative marquee-container d-none d-sm-block">
+      <div class="marquee d-flex justify-content-around">
+        <img alt="image" loading="lazy" src="../images/slider/allianz-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/armeec-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/dzi-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/bulins-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/bulstrad-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/dallbog-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/euroins-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/generali-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/groupama-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/levins-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/ozk-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/uniqa-slider.jpg">
+        <img alt="image" loading="lazy" src="../images/slider/obb-slider.jpg">
+      </div>
+    </div>
+    <div id="banner" style="background-image: url(../images/pages/gdprPage/banner.jpg); background-position: 0% 70%;"></div>
+    <section id="firstSection">
+      <div class="insurance-main">
+        <div class="ins-left ins">
+          <div class="banner-header" style="text-align: center;">
+            <p class="ins-p-banner">ДРУГИ УСЛУГИ </p1>
+          </div>
+          <div class="banner-body">
+            <p>Тук можете бързо да достъпите други често търсени продукти.</p>
+            <ul>
+              <li>
+                <a href="./goInsPage.html">Гражданска отговорност</a>
+                <button>
+                  <i class="fa-solid fa-car"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./carGradingPage.html">Оценка МПС</a>
+                <button>
+                  <i class="fa-solid fa-car-on"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./roadHelpPage.html">Помощ на пътя</a>
+                <button>
+                  <i class="fa-solid fa-car-burst"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./medInsPage.html">Мед. застраховка за чужбина</a>
+                <button>
+                  <i class="fa-solid fa-laptop-medical"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./lifeInsPage.html">Застраховка "ЖИВОТ"</a>
+                <button>
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./homeInsPage.html">Имущество</a>
+                <button>
+                  <i class="fa-solid fa-house-chimney-user"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./docEditPage.html">Промяна в полица</a>
+                <button>
+                  <i class="fa-solid fa-file-signature"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./obbCreditPage.html">Кредит от ОББ</a>
+                <button>
+                  <i class="fa-solid fa-sack-dollar"></i>
+                </button>
+              </li>
+              <li>
+                <a href="http://eisoukr.guaranteefund.org/" target="_blank">Провери ГО</a>
+                <button>
+                  <i class="fa-brands fa-searchengin"></i>
+                </button>
+              </li>
+              <li>
+                <a href="https://www.zastrahovam.bg/wp-content/uploads/2020/02/protokol-ptp.pdf" target="_blank">Протокол ПТП</a>
+                <button>
+                  <i class="fa-solid fa-file-lines"></i>
+                </button>
+              </li>
+              <li>
+                <a href="./paymentPage.html">Плати вноска</a>
+                <button>
+                  <i class="fa-regular fa-money-bill-1"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ins-center ins" style="bottom: 1%!important; text-align:left!important; min-width: 320px;">
+          <div id="content" class="col-12 article-container">
+            <article id="page-3" class="post-3 page type-page status-publish has-post-thumbnail czr-hentry">
+              <header class="entry-header ">
+                <div class="entry-header-inner">
+                  <h1 class="entry-title" style="font-size:2.5rem; margin: 0 0 20px 0; text-align: center;background: #ffb80f;">Политика за поверителност и прозрачност</h1>
+                </div>
+              </header>
+              <div class="post-entry tc-content-inner">
+                <section class="post-content entry-content ">
+                  <div class="czr-wp-the-content">
+                    <div class="docHolder" style="padding: 20px;">
+                      <p>
+                        <strong>ПОЛИТИКА ЗА ЗАЩИТА НА ЛИЧНИТЕ ДАННИ</strong>
+                      </p>
+                      <h2>ОБЩИ ПОЛОЖЕНИЯ</h2>
+                      <p>Тази политика за защита на личните данни е изготвена в съответствие с изискванията на Регламент (ЕС) 2016/679 на Европейския парламент и на Съвета от 27 април 2016 година относно защитата на физическите лица във връзка с обработването на лични данни и относно свободното движение на такива данни (наричан по-нататък „Регламент (ЕС) 2016/679“ или „ОРЗД“).</p>
+                      <p>Ние разбираме, че личните ви данни и защитата на информацията, която споделяте с нас, е изключително важна. Затова и нашата Политика за защита на личните данни описва как обработваме данните ви и какви са мерките, които предприемаме, за да ги защитим.</p>
+                      <p>Настоящата политика се отнася за вас, в случай че ни предоставяте лични данни по телефона (чрез обаждане или SMS), в онлайн регистрационна форма, по пощата или чрез куриер, през социалните мрежи, в корпоративен или промоционален уебсайт, през мобилно приложение или по друг начин. Политиката ни за защита на личните данни е израз на готовността ни да защитаваме личната ви информация.</p>
+                      <p>
+                        <strong>Информация относно Администратора на лични данни</strong>
+                      </p>
+                      <p>
+                        <strong>Чл.1. (1) „</strong>
+                        <strong>ДЕЛЛА МЕНИДЖМЪНТ</strong>
+                        <strong>“</strong>
+                        <strong> ЕООД </strong>(Дружеството) е администратор на лични данни, регистриран в Търговския регистър към Агенция по вписванията с ЕИК: 203642706, със седалище и адрес на управление: гр. Димитровград ПК 6400, бул. Димитър Благоев бл. 19, България
+                      </p>
+                      <p>
+                        <strong>&nbsp;</strong>
+                        <strong>(2)</strong> Настоящата политика цели да разясни и представя информация и условията за упражняването на правата на физическите лица във връзка със защитата на личните им данни, които се обработват от „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> във връзка с дейността на дружеството.
+                      </p>
+                      <p>
+                        <strong>&nbsp;(3)</strong> Политиката има за цел да ви информира за дейностите по обработване на вашите лични данни, целите, за които се обработват те, мерките и гаранциите за защита на данните, вашите права и начина, по който можете да ги упражнявате в съответствие с изискванията на ОРЗД и релевантното приложимо законодателство на Европейския съюз и Република България.
+                      </p>
+                      <p>
+                        <strong>(4)</strong> В изпълнение на Политиката за защита на личните данни в „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> и на целите на Общия регламент относно защитата на данните и Закона за защита на личните данни (ЗЗЛД), Дружеството обработва вашите лични данни, като спазва следните принципи:
+                      </p>
+                      <ol>
+                        <li>законосъобразност, добросъвестност и прозрачност;</li>
+                        <li>ограничение на целите;</li>
+                        <li>свеждане на данните до минимум;</li>
+                        <li>точност;</li>
+                        <li>ограничение на съхранението;</li>
+                        <li>цялостност и поверителност.</li>
+                      </ol>
+                      <p>
+                        <strong>Информация относно компетентния надзорен орган</strong>
+                      </p>
+                      <p>
+                        <strong>Чл.2.</strong> В случай на нарушаване на правата ви съгласно горепосоченото или приложимото законодателство за защита на личните данни, имате право да подадете жалба до Комисията за защита на личните данни, както следва:
+                      </p>
+                      <ol>
+                        <li>Наименование: Комисия за защита на личните данни</li>
+                        <li>Седалище и адрес на управление: гр. София 1592, бул. „Проф. Цветан Лазаров” № 2</li>
+                        <li>Данни за кореспонденция: гр. София 1592, бул. „Проф. Цветан Лазаров” № 2</li>
+                        <li>Телефон: 02 915 3 518</li>
+                        <li>Email:&nbsp; <a href="mailto:kzld@government.bg">kzld@government.bg</a>,&nbsp; <a href="mailto:kzld@cpdp.bg">kzld@cpdp.bg</a>
+                        </li>
+                        <li>Уеб сайт:&nbsp; <a href="http://www.cpdp.bg/">www.cpdp.bg</a>
+                        </li>
+                      </ol>
+                      <p>
+                        <strong>Чл.3.</strong> По смисъла на настоящата политика:
+                      </p>
+                      <ol>
+                        <li>
+                          <strong>„Лични данни“</strong> – е всяка информация, свързана с идентифицирано физическо лице или физическо лице, което може да бъде идентифицирано, пряко или непряко, като име, единен граждански номер, данни за местонахождение, онлайн идентификатор или по един или повече признаци, специфични за физическата, физиологичната, генетичната, психическата, умствената, икономическата, културната или социална идентичност на това физическо лице;
+                        </li>
+                        <li>
+                          <strong>„Субект на данни“</strong> – физическо лице, което може да бъде идентифицирано, в резултат на обработването на личните му данни;
+                        </li>
+                        <li>
+                          <strong>„Обработване“</strong> – е всяка операция или съвкупност от операции, извършвана с лични данни или набор от лични данни чрез автоматични или други средства като събиране, записване, организиране, структуриране, съхранение, адаптиране или промяна, извличане, консултиране, употреба, разкриване чрез предаване, разпространяване или друг начин, по който данните стават достъпни, подреждане или комбиниране, ограничаване, изтриване или унищожаване;
+                        </li>
+                        <li>
+                          <strong>„Обработващ лични данни“</strong> – е физическо или юридическо лице, публичен орган, агенция или друга структура, която обработва лични данни от името на „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД;
+                        </li>
+                        <li>
+                          <strong>„Получател“</strong> – означава физическо или юридическо лице, публичен орган, агенция или друга структура, пред която „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД разкрива лични данни, независимо дали е трета страна или не. Публичните органи, които могат да получават лични данни в рамките на конкретно разследване в съответствие с правото на Съюза или правото на държава членка, не се считат за „получатели“; обработването на тези данни от посочените публични органи отговаря на приложимите правила за защита на данните съобразно целите на обработването;
+                        </li>
+                        <li>
+                          <strong>„Съгласие на субекта на данните“</strong> – е всяко свободно изразено, конкретно, информирано и недвусмислено указание за волята на субекта на данните, посредством изявление или ясно потвърждаващо действие, което изразява съгласието му свързаните с него лични данни да бъдат обработени;
+                        </li>
+                        <li>
+                          <strong>„Нарушение на сигурността на личните данни“</strong> – означава нарушение на сигурността, което води до случайно или неправомерно унищожаване, загуба, промяна, неразрешено разкриване или достъп до лични данни, които се предават, съхраняват или обработват по друг начин.
+                        </li>
+                      </ol>
+                      <p>
+                        <strong>ЛИЧНИ ДАННИ</strong>
+                      </p>
+                      <p>
+                        <strong>Чл.4. </strong>Във връзка с дейността ни „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД обработваме лични данни на следните категории лица:
+                      </p>
+                      <ol>
+                        <li>Купувачи на стоки;</li>
+                        <li>Потребители на услуги;</li>
+                        <li>Посетители на нашия уебсайт;</li>
+                        <li>Получатели на рекламни съобщения.</li>
+                      </ol>
+                      <p>
+                        <strong>Чл.5. </strong>С оглед установяване и упражняване на правата ви, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> обработва следните Ваши лични данни:
+                      </p>
+                      <ol>
+                        <li>
+                          <strong> Данни относно вашата идентичност – </strong>вашите имена, ЕГН, пол, възраст;
+                        </li>
+                        <li>
+                          <strong> Ваши лични данни</strong>
+                          <strong>за контакт –</strong> постоянен адрес, друг адрес, телефон и електронен адрес (e-mail);
+                        </li>
+                        <li>
+                          <strong> Друга информация:</strong> компания, позиция, бизнес сектор, както и всякаква обратна връзка, която ни предоставяте по пощата, телефона, имейл или чрез съобщения в социалните мрежи;
+                        </li>
+                        <li>
+                          <strong> Информация за устройството или устройствата</strong>, които използвате или сте използвали за достъп до нашия сайт (напр. марка и модел на вашето устройство, операционна система, браузър или IP адрес).
+                        </li>
+                        <li>
+                          <strong> Подробности за имейлите и други електронни съобщения</strong>, които получавате от нас, включително дали тези съобщения са били отворени и дали сте кликвали върху някоя от връзките (линкове) в тях. Искаме да бъдем сигурни, че нашите съобщения са полезни и важни за вас, така че в случай че не ги отворите и не кликнете върху връзка (линк) в тях, ние знаем, че трябва да подобрим информацията, която ви изпращаме.
+                        </li>
+                        <li>
+                          <strong>Информация от други източници</strong>, като например наши партньори, специализирани компании, които предоставят информация за клиентите си с тяхно съгласие, в явен или анонимизиран вид (напр. компании за маркетингови или клинични проучвания, финансови институции, социални мрежи и др.), вкл. и информация за Вас, която е публично достъпна.
+                        </li>
+                        <li>
+                          <strong> „Бисквитки“, </strong>както и други проследяващи устройства
+                        </li>
+                      </ol>
+                      <p>Така наречените сесийни (временни) „бисквитки“ се използват, доколкото това е необходимо, за да се осигури сигурно и ефективно функциониране на интернет страницата ни и нейното използване. Съхраняването на сесийни „бисквитки“ на крайни устройства или потребителския приложен софтуер, предназначен за разглеждане на информационни ресурси (Уеб браузъри) е изцяло под контрола на потребителя. Свързаната с „бисквитките“ информация се съхранява от страна на сървъра след HTTP сесии в сервизните дневници не по-дълго от времето, необходимо за приключване на специфичната цел, която се обработва, или доколкото е предвидено в закон.</p>
+                      <ol start="8">
+                        <li>Използваме <strong>Google Analytics</strong> като инструмент за наблюдение (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). Google Analytics използва „бисквитки“, които ни позволяват да следим броя на посетителите на интернет страницата, техния източник и да анализираме колко често и как се използва съдържанието на уебсайта. Можете да инсталирате инструмент за отказ, предотвратяващ събирането на подобна информация от посещението ви ( <a href="https://tools.google.com/dlpage/gaoptout?hl=en">https://tools.google.com/dlpage/gaoptout?hl=en</a>) </li>
+                        <li>
+                          <strong> Приставки за социални медии (plug-ins)</strong>
+                        </li>
+                      </ol>
+                      <p>Използваме социални медии за популяризиране на дейността на дружеството. Всяка социална медийна платформа има собствена политика за поверителност и обработва вашите лични данни.</p>
+                      <p>
+                        <strong>Facebook</strong>
+                      </p>
+                      <p>Когато посещавате уебсайта ни, Facebook (Facebook Inc., 1601 Willow Road, Menlo Park, CA 94025, USA) разпознава вашия профил и осъществява директна връзка между вашия браузър и профила ви във Facebook. По този начин платформата на Facebook получава информация за вашия IP адрес от посещението ви на нашия уебсайт. За повече информация можете да откриете политиката за поверителност на Facebook тук: <a href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a> Друга информация, която се обработва от нас и Facebook съвместно, е тази, която ни е предоставена във връзка с нашата Facebook страница. Имаме достъп до анонимна статистика за дейностите, които се осъществяват на нашата Facebook страница, като категорично не можем да свържем или идентифицираме специфичен профил чрез тези данни. <strong>
+                          <br>
+                        </strong>
+                      </p>
+                      <p>
+                        <strong>Чл.5. (1) „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД </strong>не събира и не обработва лични данни, които се отнасят за следното:
+                      </p>
+                      <ol>
+                        <li>разкриват расов или етнически произход;</li>
+                        <li>разкриват политически, религиозни или философски убеждения, или членство в синдикални организации;</li>
+                        <li>генетични и биометрични данни, данни за здравословното състояние или данни за сексуалния живот или сексуалната ориентация.</li>
+                      </ol>
+                      <p>
+                        <strong>(2)</strong>&nbsp;Личните данни са събрани от „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> от лицата, за които се отнасят.
+                      </p>
+                      <p>
+                        <strong>(3)</strong>&nbsp;Дружеството не извършва автоматизирано взимане на решения с данни.
+                      </p>
+                      <p>
+                        <strong>(4)</strong>
+                        <strong>&nbsp;</strong>Дружеството не обработва данни за лица под 16 години, освен с изрично съгласие на техните родители или представители.
+                      </p>
+                      <p>
+                        <strong>Чл.6. Основание за събиране, обработване и съхраняване на вашите лични данни</strong>
+                      </p>
+                      <p>
+                        <strong>(1)</strong>&nbsp;„ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> събира и обработва вашите лични данни въз основа на следното:
+                      </p>
+                      <ol>
+                        <li>Вие сте дали <strong>съгласие за обработване на личните ви данни</strong> за една или повече конкретни цели; </li>
+                        <li>Обработването е необходимо за <strong>изпълнението на договор</strong>, по който вие сте страна, или за предприемане на стъпки по ваше искане преди сключването на договор между нас и вас; </li>
+                        <li>Обработването е необходимо за спазването на <strong>законово задължение</strong>, което се прилага спрямо нас като администратор на лични данни; </li>
+                        <li>Обработването е необходимо, за да бъдат <strong>защитени ваши жизненоважни интереси</strong> или на друго физическо лице; </li>
+                        <li>Обработването е необходимо за <strong>изпълнението на задача от обществен интерес или при упражняването на официални правомощия</strong>, които са ни предоставени в качеството ни на администратор на лични данни; </li>
+                        <li>Обработването е необходимо за целите на наш <strong>легитимен/ законен интерес или на трета страна</strong>, освен когато пред такива интереси преимущество имат вашите интереси или основни права и свободи, които изискват специална защита на личните Ви данни. </li>
+                      </ol>
+                      <p>
+                        <strong>(2)</strong>&nbsp;„ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> е администратор на лични данни по отношение на вашите данни като ползватели на нашите услуги. Спрямо личните данни, които вие обработвате, използвайки нашите услуги, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> действа в качеството си на обработващ лични данни.
+                      </p>
+                      <p>
+                        <strong>Чл.7. Цели, за които използваме личните данни, които ни предоставяте:</strong>
+                      </p>
+                      <ol>
+                        <li>За да ви изпратим отговор на отправено от вас запитване за някоя/и от нашите продукти или услуги;</li>
+                        <li>За да ви изпращаме имейли с новини и предложения от компанията;</li>
+                        <li>За да ви изпращаме покани за събития, които организираме – самостоятелно или с наши партньори;</li>
+                        <li>За статистически нужди и анализи;</li>
+                        <li>За да ни помогнат да разберем повече за вас като наш клиент, за продуктите и/или услугите, които използвате, за начина, по който ги използвате, както и за да ви осигурим по-добро обслужване от страна на нашите служители;</li>
+                        <li>За да ви изпращаме покани за участие в проучвания – онлайн или на хартиен носител.</li>
+                        <li>За да откриваме начини да подобрим нашите продукти, услуги, приложения или уебсайтове.</li>
+                        <li>За създаване на профил в сайта и осигуряване на пълна функционалност при предоставянето на услугите ни;</li>
+                        <li>За индивидуализация на страна по договора;</li>
+                        <li>За счетоводни цели;</li>
+                        <li>За статистически цели;</li>
+                        <li>За защита на информационната сигурност;</li>
+                        <li>За обезпечаване на изпълнението на договора за предоставяне на съответната услуга;</li>
+                        <li>За подобряване и индивидуализиране на услугата чрез предлагане на подходящи за Вас промоционални оферти за продукти и услуги, които могат да са от интерес за Вас;</li>
+                        <li>За абониране за нашите статии, публикувани в блога на сайта ни;</li>
+                        <li>За оставяне на коментари под продукти и наши статии, публикувани в блога ни.</li>
+                      </ol>
+                      <p>
+                        <strong>ПРАВА НА ФИЗИЧЕСКИТЕ ЛИЦА</strong>
+                      </p>
+                      <p>
+                        <strong>Чл.8. (1) </strong>В качеството ви на физическо лице, чиито данни „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> обработва, вие&nbsp; имате следните права:
+                      </p>
+                      <ol>
+                        <li>
+                          <strong>Да получите информация </strong>за обработваните ваши лични данни. Имате право на достъп до личните ви данни, които обработваме за целите посочени по горе. Ако обработваме тези данни и получим искане от вас (или от трето лице, упълномощено от вас), ще осигурим този достъп безплатно. Имате право и да поискате копие от вашите лични данни, които обработваме.Преди да осигурим достъп до личните данни на вас или на упълномощено от вас лице, можем да поискаме доказателство за идентичността, както и подробности за отношенията ви с нас или с наши партньори, за да можем да открием данните, които се отнасят до вас.;
+                        </li>
+                        <li>
+                          <strong>Да поискате коригиране</strong> на събраните за вас данни, ако същите са некоректни или са претърпели промяна;
+                        </li>
+                        <li>
+                          <strong>Да поискате изтриването</strong>
+                          <strong>(„да бъдеш забравен“)</strong> на събраните за вас лични данни, с изключение на случаите, в които „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> обработва личните ви данни при спазване на задължения, произтичащи от закона. Имате право да поискате да заличим личните ви данни без ненужно забавяне ако: <ol>
+                            <li>личните данни повече не са необходими за целите, за които са били събрани;</li>
+                            <li>когато сте оттеглили своето съгласие;</li>
+                            <li>когато сте възразили срещу обработването, ако то е незаконосъобразно;</li>
+                            <li>когато личните данни трябва да бъдат изтрити с цел спазването на правно задължение по правото на Съюза или правото на държава членка, което се прилага спрямо нас като администратор на лични данни;</li>
+                            <li>когато личните данни са били събрани във връзка с предлагането на услуги на информационното общество.</li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <p>При определени условия може да откажем да заличим личните Ви данни, в случаите, предвидени от закона.</p>
+                      <ol start="4">
+                        <li>
+                          <strong>Да поискате ограничаване обработването</strong> на вашите лични данни само за целите, за които са събрани – в съответствие с изискванията на Общия регламент за защита на личните данни, Закона за защита на личните данни и актовете по прилагането им (само в случаите, предвидени в приложимата нормативна уредба и доколкото това не противоречи на нормативните ни задължения за обработване на личните ви данни);
+                        </li>
+                        <li>
+                          <strong> Право на преносимост на </strong>вашите лични данни (само в случаите предвидени в приложимата нормативна уредба и доколкото това не противоречи на нормативните ни задължения за обработване на личните ви данни);
+                        </li>
+                        <li>
+                          <strong> Да получите копия на документите</strong> с вашите лични данни, след подаване на искане по образец в офис на Дружеството;
+                        </li>
+                        <li>По всяко време можете <strong>да възразите срещу обработването на личните ви данни</strong> за целите на директния маркетинг, осъществяван от „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong>, като оттеглите съгласието си. </li>
+                      </ol>
+                      <p>
+                        <strong>Чл.10.</strong>
+                        <strong>(1) </strong>При нарушаване на правата ви по Общия регламент относно защитата на данните, ЗЗЛД, вие имате право във всеки един момент да подадете жалба до съответния надзорен орган, а именно Комисия за защита на личните данни;
+                      </p>
+                      <p>
+                        <strong>(2) </strong>Можете да обжалвате действията и актовете на „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> и обработващите от името на Дружеството, и по съдебен ред пред съответния административен съд и пред Върховния административен съд. <em>.</em>
+                      </p>
+                      <p>
+                        <strong>Чл.11. (1)</strong> Правата по чл. 9 можете да осъществите, като попълните писмено <strong>
+                          <em>„</em>
+                        </strong>
+                        <strong>
+                          <em>Заявление за упражняване на права във връзка със защитата на личните данни“ (Заявлението), </em>
+                        </strong>което ще ви предоставим при поискване.
+                      </p>
+                      <p>
+                        <strong>(2)</strong>
+                        <strong>Заявлението</strong> може да отправите лично или чрез ваше изрично упълномощено лице с нотариално заверено пълномощно на хартиен носител във всеки наш офис, както и по електронен път, по реда на ЗЕДЕУУ. Когато <strong>Заявлението <em> &nbsp;</em>
+                        </strong>се съставя като електронен документ, следва да бъде подписано с квалифициран електронен подпис.
+                      </p>
+                      <p>
+                        <strong>(3)</strong> При подаване на <strong>Заявлението</strong> от упълномощено лице към него следва да приложите и съответното изрично пълномощно.
+                      </p>
+                      <p>
+                        <strong>(4)</strong> В случаите, когато при упражняване на правата ви по настоящата глава съществува вероятност да се разкрият лични данни и за трето лице, съответният наш служител ще ви предостави достъп само до частта от тях, която се отнася за вас.
+                      </p>
+                      <p>
+                        <strong>Чл.12.&nbsp; </strong>В срок до 30 (тридесет дни) от постъпването на валидно ваше <strong>„Заявление за упражняване на права във връзка със защитата на личните данни“</strong>, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong>, ще ви предостави писмена информация във връзка с действията, извършени от нас, като:
+                      </p>
+                      <ol>
+                        <li>
+                          <strong>При упражнено от вас право на достъп до личните данни</strong> – ще ви предостави информация за: целите, за които Дружеството обработва личните ви данни; категориите лични данни, които обработва; получателите или категориите получатели, пред които са или ще бъдат разкрити личните ви данни, по-специално получателите в трети държави или международни организации получатели, на които ги предоставя; когато е възможно, предвидения срок, за който ще се съхраняват личните ви данни, а ако това е невъзможно, критериите, използвани за определянето на този срок; съществуването на право да изискате от нас коригиране или изтриване на лични данни или ограничаване на обработването на лични данни, свързани с вас, или да се направи възражение срещу такова обработване, правото ви на жалба до компетентните надзорни органи; когато личните ви данни не са събрани от вас – всякаква налична информация за техния източник, съществуването на автоматизирано вземане на решения, включително профилирането, съгласно Общия Регламент относно защитата на данните;
+                        </li>
+                        <li>
+                          <strong> При упражнено от вас право на изтриване на личните ви данни – </strong>ще изтрие без ненужно забавяне вашите лични данни, при условие, че са налице предпоставките за упражняване на това ваше право, предвидени в Общия регламент относно защита на данните, ЗЗЛД и актовете по прилагането им и доколкото това не противоречи на нормативните ни задължения за обработване на личните ви данни;
+                        </li>
+                        <li>
+                          <strong> При упражнено от вас право на</strong>
+                          <strong>ограничаване обработването на вашите лични данни –</strong> ще ограничи обработването на личните ви данни, в случаите, предвидени в приложимата нормативна уредба и доколкото това не противоречи на нормативните ни задължения за обработване на личните ви данни, без да ги изтрием, както и ще ви информираме преди отмяната на ограничаването на обработването.
+                        </li>
+                        <li>
+                          <strong>4</strong>. <strong>При упражнено от вас право на преносимост на ваши лични данни</strong> – „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ще ви представи личните данни в структуриран, широко използван и пригоден за машинно четене формат и ще прехвърли вашите данни на друг администратор, в случаите, предвидени в приложимата нормативна уредба и доколкото това не противоречи на нормативните ни задължения за обработване на личните ви данни.
+                        </li>
+                      </ol>
+                      <p>
+                        <strong>(2) „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ще ви информира писмено и за всеки отказ за достъп, изтриване, право на ограничаване на обработването на ваши лични данни или искане за упражняване право на преносимост, както и за причините за отказа в срока по ал.1.
+                      </p>
+                      <p>
+                        <strong>(3) </strong>Когато личните ви данни са изтрити или обработването им е ограничено, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ще уведоми получателите им, които носят отговорност за тяхното съответно – изтриване, или ограничаване.
+                      </p>
+                      <p>
+                        <strong>(4)</strong> Задължението ни за предоставяне на информацията по настоящия член може да бъде ограничено изцяло или частично, като се отчитат вашите основни права и легитимни интереси и в случаите, предвидени от приложимите нормативни актове.
+                      </p>
+                      <p>
+                        <strong>(5) „</strong>
+                        <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> има право да удължи срока по ал.1 до 60 дни, в зависимост от сложността и броя на постъпилите заявления във всеки отделен случай. Дружеството ще Ви уведоми за всяко удължаване на срока, както и за причините за удължаването на срока за отговор от наша страна в срок от 30 дни от постъпването на валидно ваше „ <strong>Заявление за упражняване на права във връзка със защитата на личните данни“</strong>
+                        <strong>.</strong>
+                      </p>
+                      <p>
+                        <strong>Чл.13. (1)</strong> Правото да поискате коригиране на личните ви данни можете да осъществите, като попълните писмено <strong> „Заявление за коригиране на личните данни“ (Заявлението) <em>, </em>
+                        </strong>което ще ви предоставим при поискване.
+                      </p>
+                      <p>
+                        <strong>(2)</strong>
+                        <strong>Заявлението</strong> може да отправите лично или чрез ваше изрично упълномощено лице с нотариално заверено пълномощно на хартиен носител внаш офис, както и по електронен път, по реда на Закона за електронния документ и електронните удостоверителни услуги (ЗЕДЕУУ). Когато <strong>Заявлението </strong>се съставя като електронен документ, следва да бъде подписано с квалифициран електронен подпис.
+                      </p>
+                      <p>
+                        <strong>(3)</strong> При подаване на <strong>Заявлението</strong> от упълномощено лице към него следва да приложите и съответното изрично пълномощно.
+                      </p>
+                      <p>
+                        <strong>Чл.14. (1) </strong>В срок до 30 (тридесет дни) от постъпването на валидно ваше <strong>„Заявление за коригиране на личните данни“</strong>, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong>, ще коригира без ненужно забавяне неточните лични данни, свързани с вас или ще допълни непълните ви лични данни.
+                      </p>
+                      <p>
+                        <strong>(2) „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ще ви информира писмено за всеки отказ за коригиране или допълване на Ваши лични данни, както и за причините за отказа в срока по ал.1.
+                      </p>
+                      <p>
+                        <strong>(3) </strong>Когато личните ви данни са коригирани или допълнени, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ще уведоми получателите им, които носят отговорност за тяхното съответно – коригиране или допълване.
+                      </p>
+                      <p>
+                        <strong>(4)</strong> Задължението ни за предоставяне на информацията по настоящия член може да бъде ограничено изцяло или частично, като се отчитат Вашите основни права и легитимни интереси и в случаите, предвидени от приложимите нормативни актове.
+                      </p>
+                      <p>
+                        <strong>Чл.15. (1)</strong> Правото да възразите срещу обработването на личните ви данни за целите на директния маркетинг можете да осъществите, като попълните писмено <strong> „Заявление за оттегляне на съгласие за обработване на лични данни за целите на директния маркетинг“ (Заявлението) <em>, </em>
+                        </strong>което ще ви предоставим, при поискване.
+                      </p>
+                      <p>
+                        <strong>(2)</strong>
+                        <strong>Заявлението</strong> може да отправите лично или чрез ваше изрично упълномощено лице с нотариално заверено пълномощно на хартиен носител във всеки наш офис, както и по електронен път, по реда на Закона за електронния документ и електронните удостоверителни услуги (ЗЕДЕУУ). Когато <strong>
+                          <em>Заявлението </em>
+                        </strong>се съставя като електронен документ, следва да бъде подписано с квалифициран електронен подпис.
+                      </p>
+                      <p>
+                        <strong>(3)</strong> При подаване на <strong>Заявлението</strong> от упълномощено лице към него следва да приложите и съответното изрично пълномощно.
+                      </p>
+                      <p>
+                        <strong>Чл.16.&nbsp; </strong>В срок до 30 (тридесет дни) от постъпването на валидно ваше <strong>„Заявление за оттегляне на съгласие за обработване на лични данни за целите на директния маркетинг“ <em>, </em>„ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД </strong>, ще прекрати обработването на предоставените от Вас лични данни за целите на директния маркетинг и ще ви предостави писмена информация във връзка с тези действия.
+                      </p>
+                      <p>
+                        <strong>(2) „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ще ви информира писмено и за всеки отказ за уважаване на Заявлението по ал.1, както и за причините за отказа в срока по ал.1.
+                      </p>
+                      <p>
+                        <strong>(3) </strong>След като „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> прекрати обработването на предоставените от вас лични данни, Дружеството ще уведоми получателите им, които носят отговорност за прекратяването на обработването им.
+                      </p>
+                      <p>
+                        <strong>(4)</strong> Задължението ни за предоставяне на информацията по настоящия член може да бъде ограничено изцяло или частично, като се отчитат вашите основни права и легитимни интереси и в случаите, предвидени от приложимите нормативни актове.
+                      </p>
+                      <p>
+                        <strong>(5) „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> има право да удължи срока по ал.1 до 60 дни, в зависимост от сложността и броя на постъпилите заявления във всеки отделен случай. Дружеството ще Ви уведоми за всяко удължаване на срока, както и за причините за удължаването на срока за отговор от наша страна в срок от 30 дни от постъпването на валидно Ваше <strong>
+                          <em>„Заявление за оттегляне на съгласие за обработване на лични данни за целите на директния маркетинг“</em>
+                        </strong>.
+                      </p>
+                      <p>
+                        <strong>Срок на съхранение на личните ви данни</strong>
+                      </p>
+                      <p>
+                        <strong>&nbsp;</strong>
+                        <strong>Чл.17. (1)&nbsp;„ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД </strong>съхранява вашите лични данни за срок не по-дълъг от съществуването на профила ви в уебсайта. След изтичането на този срок, <strong> „ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> полага необходимите грижи да изтрие и унищожи всички ваши данни, без ненужно забавяне. В масовия случай, ако не сме уточнили друго, данните ви се съхраняват за срок от 2 (две) календарни години от датата на получаването им.
+                      </p>
+                      <p>
+                        <strong>(2)</strong>&nbsp;„ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> ви уведомява, в случай, че срокът за съхранение на данните е необходимо да бъде удължен с оглед изпълнение на целите, изпълнение на договора, с оглед легитимни интереси на „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> или друго.
+                      </p>
+                      <p>
+                        <strong>(3)</strong>&nbsp;„ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> съхранява вашите данни, дадени на основание съгласие, до неговото изрично оттегляне, като това не засяга направени публикации и коментари с оглед запазване на смисловата цялост на коментарите.
+                      </p>
+                      <p>
+                        <strong>(4)&nbsp;„ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> съхранява личните данни, които е необходимо да пази по силата на приложимото законодателство за съответния предвиден срок, който може да надхвърля срока на съществуване на вашата регистрация.
+                      </p>
+                      <p>
+                        <strong>При нарушение на сигурността на личните ви данни</strong>
+                      </p>
+                      <p>
+                        <strong>Чл. 18. (1)&nbsp;</strong>Ако „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД </strong>установи нарушение на сигурността на личните ви данни, което може да породи висок риск за вашите права и свободи, ние ви уведомяваме без ненужно забавяне за нарушението, както и за мерките, които са предприети или предстои да бъдат предприети.
+                      </p>
+                      <p>
+                        <strong>(2)&nbsp;„ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД </strong>не е длъжно да ви уведомява, ако:
+                      </p>
+                      <ol>
+                        <li>е предприел подходящи технически и организационни мерки за защита по отношение на данните, засегнати от нарушението на сигурността;</li>
+                        <li>е взел впоследствие мерки, които гарантират, че нарушението няма да доведе до висок риск за правата Ви;</li>
+                        <li>уведомяването би изисквало непропорционални усилия.</li>
+                      </ol>
+                      <p>
+                        <strong>Лица, на които се предоставят личните ви данни</strong>
+                      </p>
+                      <p>
+                        <strong>Чл. 19.&nbsp;</strong>Във връзка със сключването на договори за покупко-продажба и доставка на предлаганите от „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> стоки и услуги, „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> предава необходимата информация към:
+                      </p>
+                      <ol>
+                        <li>Куриерски или пощенски компании, които трябва да ви доставят документални или други пратки от наше име;</li>
+                        <li>Печатници, които трябва да подготвят персонализирани материали за вас;</li>
+                        <li>Компании за изпращане на масов имейлинг, когато трябва да получите имейл съобщение от нас.</li>
+                      </ol>
+                      <p>
+                        <strong>Чл. 20.&nbsp;</strong>Администраторът не извършва трансфер на вашите данни към трети държави.
+                      </p>
+                      <p>
+                        <strong>Защита на данните</strong>
+                      </p>
+                      <p>
+                        <strong>Чл. 21</strong>. „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong> третира вашите лични данни като строго поверителни. За да ги защити, са предприети редица мерки, включително:
+                      </p>
+                      <ol>
+                        <li>Ограничаваме достъпа до помещенията, в които работим, само до хората, които трябва да бъдат там (за целта използваме кодове и карти за достъп, пароли и др. технологии, свързани с ограничаване на достъпа до определени помещения);</li>
+                        <li>Прилагаме и контрол на достъпа до нашите системи за информационни технологии с помощта на защитни стени (firewalls), валидиране на идентификационен номер (ID), логическо сегментиране и/или физическо разделяне на нашите системи и информация;</li>
+                        <li>Използваме способи като криптиране и псевдонимизиране на информацията;</li>
+                        <li>Никога не искаме от вас да ни изпращате паролата си;</li>
+                        <li>Съветваме ви никога да не въвеждате номер на сметка, парола или друга чувствителна информация в имейл към нас.</li>
+                      </ol>
+                      <p>
+                        <strong>Допълнителни разпоредби</strong>
+                      </p>
+                      <ul>
+                        <li>
+                          <strong>1. </strong>Настоящата политика е утвърдена със заповед на представляващия „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong>
+                        </li>
+                        <li>
+                          <strong>2.</strong> За неуредените в Настоящата политика въпроси се прилагат Общият регламент относно защитата на данните, Законът за защита на личните данни и другите нормативни актове, относими към дейността на „ <strong>ДЕЛЛА МЕНИДЖМЪНТ“ ЕООД</strong>.
+                        </li>
+                        <li>
+                          <strong>3. Отчитайки съвременните тенденции, настоящата политика за поверителност може да бъде променяна. Датата на актуализиране е посочена в края на документа. Всички промени в настоящата политика за поверителност ще бъдат приложими след тяхното обявяване занапред.</strong>
+                        </li>
+                      </ul>
+                      <p>
+                        <strong>Последна актуализация: 2020 г.</strong>
+                      </p>
+                      <p>
+                        <strong>Настоящата политика е изготвена от екип професионалисти на </strong>
+                        <a href="https://www.advocatus.bg/">
+                          <strong>Advocatus.bg</strong>
+                        </a>
+                      </p>
+                      <p>Благодарим за доверието Ви!</p>
+                    </div>
+                  </div>
+                  <footer class="post-footer clearfix"></footer>
+                </section>
+                <!-- .entry-content -->
+              </div>
+              <!-- .post-entry -->
+            </article>
+          </div>
+        </div>
+        <div class="ins-right ins">
+          <div class="banner-header" style="text-align: center;">
+            <p class="ins-p-banner">ВРЪЗКА С НАС </p1>
+          </div>
+          <div class="banner-body ins-banner-socials">
+            <p style="text-align: center; font-size: 0.8rem;">Имате обратен отзив, запитване, желаете друг вид услуга? Използвайте тези връзки за бърз контакт с нас!</p>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/zastrahovam.bg">Facebook <br>
+                  <small>facebook.com/zastrahovam.bg</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/pages/sec-page-banner-socials/facebook.png" alt="facebook">
+              </li>
+              <li>
+                <a href="https://www.instagram.com/zastrahovam.bg/">Instagram <br>
+                  <small>instagram.com/zastrahovam.bg</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/pages/sec-page-banner-socials/instagram.png" alt="instagram">
+              </li>
+              <li>
+                <a>Електронна поща <br>
+                  <small>zastrahovam.eu@gmail.com</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/pages/sec-page-banner-socials/gmail.png" alt="gmail">
+              </li>
+              <li>
+                <a href="tel: +359 88 3486940">Мобилен номер <br>
+                  <small>+359 88 348 6940</small>
+                </a>
+                <img alt="image" loading="lazy" src="../images/pages/sec-page-banner-socials/call.png" alt="call">
+              </li>
+            </ul>
+            <p style="margin: 30% 0 0 0; text-align: center;">Свържете се с нас или заповядайте на място в нашите офиси. <br> Работно време 08:30-18:00ч. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="thirdSections">
+      <div class="map-holder">
+        <h1>НАШИТЕ ОФИСИ</h1>
+        <div class="frame-holder">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=%D0%9D%D0%9E%D0%92%D0%90%20%D0%B7%D0%B0%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%BD%D0%B0%20%D0%90%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%8F&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                }
+
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 100%;
+                }
+              </style>
+            </div>
+          </div>
+          <div class="fb-page" data-href="https://www.facebook.com/zastrahovam.bg" data-show-posts="true" data-width="300" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/zastrahovam.bg" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/zastrahovam.bg">НОВА Застрахователна Агенция</a>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer">
+      <footer class="site-footer">
+        <div class="">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>Относно</h6>
+              <p class="text-justify">През интернет страницата на НОВА Застрахователна Агенция може БЪРЗО и ЛЕСНО да поръчате всеки вид застраховки, независимо дали са за физическо или юридическо лице. Работим с повечето застрахователни компании в страната и предлагаме всички застрахователни продукти.</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Най-продавани</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="./goInsPage.html">Гражданска отговорност</a>
+                </li>
+                <li>
+                  <a href="./carInsPage.html">Автокаско</a>
+                </li>
+                <li>
+                  <a href="./homeInsPage.html">Имущество</a>
+                </li>
+                <li>
+                  <a href="./lifeInsPage.html">Застраховка ЖИВОТ</a>
+                </li>
+                <li>
+                  <a href="./cureInsPage.html">Лечение без граници <strong>ДЗИ</strong>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h6>Бързи връзки</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="tel: +359 88 3486940" style="color: #f69d26; font-weight: 600;">+359 88 3486940</a>
+                </li>
+                <li>
+                  <a href="./contactsPage.html">Контакти</a>
+                </li>
+                <li>
+                  <a href="./Page.html">Правна информация</a>
+                </li>
+                <li>
+                  <a class="cookieModalTrigger" data-bs-toggle="modal" data-bs-target="#cookieModal">Бисквитки</a>
+                </li>
+                <li>
+                  <a href="https://github.com/RadoslavStefanov">УЕБ Разработка</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="payment-methods">
+            <img src="../images/payment_methods1.png" alt="payment methods">
+            <img src="../images/payment_methods2.png" alt="payment methods">
+          </div>
+          <hr>
+        </div>
+        <div>
+          <div class="row social-row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 202X All Rights Reserved by <a href="#">DELLA MANAGEMENT Ltd</a>. </p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li>
+                  <a class="facebook" href="https://www.facebook.com/zastrahovam.bg" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dribbble" href="https://www.instagram.com/zastrahovam.bg/?hl=bg" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Cookie Banner -->
+      <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert"> 🍪 Този сайт използва бисквитки. Ще приемем, че нямате против, но ако желаете можете да откажете използването. <button type="button" class="btn btn-secondary btn-sm ms-3" data-bs-toggle="modal" data-bs-target="#cookieModal">Още</button>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="hideCookieBanner()"> Разбирам </button>
+      </div>
+      
+      <!-- Cookie Modal -->
+      <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cookieModalLabel">🍪Информация за бисквитките🍪</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="cookieModalBody">
+              <h4>Общ преглед</h4>
+              <div class="cli-privacy-content-text" style="font-size: 0.8rem; margin-bottom: 15px;">Този сайт използва бисквитки, за да подобри вашето изживяване докато го разглеждате. От тези бисквитки, категоризираните като необходими се съхраняват във вашият браузър, защото са необходими за основните функционалности в сайта. Също така използваме бисквитки на трети страни, които помагат да анализираме и разберем как използвате сайта. Тези бисквитки ще се съхранят във вашия браузър само с вашето съгласие. Също така имате възможност да откажете ползването на тези бисквитки. Отказването от някои от тези бисквитки обаче може да повлияе на използването на сайта.</div>
+              <h4>Необходимите бисквитки</h4>
+              <div class="wt-cli-cookie-description" style="font-size: 0.8rem; margin-bottom: 15px;">Необходимите бисквитки са жизнено важни за да функционира както трябва този сайт. Тази категория осигурява основни функционалности и функции за сигурност на сайта. Тези бисквитки не съхраняват никакви лични данни.</div>
+              <h4>Функционалност</h4>
+              <div class="wt-cli-cookie-description" style="font-size: 0.8rem; margin-bottom: 15px;">В случай че откажете изпозлването, от вашия браузър ще бъдат премахнати САМО бисквитки произхождащи от zastrahovam.eu !</div>
+            </div>
+            <div class="modal-footer" style="justify-content: space-evenly;">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="clearSiteCookies()">Отказвам</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Разбирам</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="ins-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="form-cont">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#ins-modal" style="position: absolute; right: 10px; top: 10px;">X</button>
+              <h1>Автокаско</h1>
+              <p>Попълнете тази форма и бързо заявете Вашата гражданска отговорност</p>
+              <form method="POST" action="https://formsubmit.co/zastrahovam.eu@gmail.com" enctype="multipart/form-data">
+               <input type="hidden" name="_next" value="https://zastrahovam.eu/pages/thankYouPage.html">
+                <input type="hidden" name="Страница произход" value="Застраховки -> Автокаско">
+                <div class="row">
+                  <div class="column">
+                    <label for="name" required>Име <p class="rec-s">*</p>
+                    </label>
+                    <input type="text" id="name" name="Име" placeholder="Вашето име тук:" required>
+                  </div>
+                  <div class="column">
+                    <label for="phone">Телефон за връзка <p class="rec-s">*</p>
+                    </label>
+                    <input type="phone" id="phone" name="Телефон за връзка" placeholder="Вашият тел. номер:" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <label for="contact">Лице на талона (снимка) <p class="rec-s">*</p>
+                    </label>
+                    <input class="form-control" name="Лице на талона" type="file" accept="image/png, image/jpeg" single required />
+                  </div>
+                  <div class="column">
+                    <label for="contact">Гръб на талона (снимка) <p class="rec-s">*</p>
+                    </label>
+                    <input class="form-control" name="Гръб на талона" type="file" accept="image/png, image/jpeg" single required />
+                  </div>
+                  <div class="column">
+                    <label for="contact">Допълнителна снимка 1 <p class="rec-s">*</p>
+                    </label>
+                    <input class="form-control" name="Допълнителна снимка 1" type="file" accept="image/png, image/jpeg" single />
+                  </div>
+                  <div class="column">
+                    <label for="contact">Допълнителна снимка 2 <p class="rec-s">*</p>
+                    </label>
+                    <input class="form-control" name="Допълнителна снимка 2" type="file" accept="image/png, image/jpeg" single />
+                  </div>
+                </div>
+                <div class="row" style="display: inline-block;">
+                  <div class="column">
+                    <label for="issue">Допълнителна информация</label>
+                    <textarea id="issue" name="Допълнителна информация" placeholder="Ако желаете, можете да предоставите допълнителна информация тук:" rows="3"></textarea>
+                  </div>
+                  <div class="row privacy-check">
+                    <input type="checkbox" id="carRegistration" value="МПС-то не е регистрирано по ЗДвП" name="ЗДвП">МПС-то не е регистрирано по ЗДвП</input>
+                  </div>
+                  <div class="row privacy-check">
+                    <input type="checkbox" id="privacy" value="Потребителят е запознат с политиката за поверителност" name="Политиката за поверителност" required>Запознат съм с политиката за поверителност и се съгласявам да получа обаждане/електронна поща с цел изпълнение на заявената от мен услуга. <p class="rec-s">*</p>
+                    </input>
+                  </div>
+                </div>
+                <div class="row button-row">
+                  <button type="submit">Изпращане</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <link rel="stylesheet" href="../styles/form.css">
+  <script src="../scripts/genericViewHelpers.js"></script>
+  
+  <style>
+    @media (max-width: 374px) {
+      .docHolder {
+        font-size: 0.8rem !important;
+        padding: 30px !important;
+      }
+    }
+  </style>
+</html>

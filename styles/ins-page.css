@@ -1,0 +1,300 @@
+.insurance-main {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px;
+}
+.ins {
+    margin: 0 20px 0 20px;
+    background-color: #fafaf7;
+    box-shadow: 20px 30px 25px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+.ins-center {
+    bottom: 10%;
+    position: relative;
+    width: 70%;
+    padding: 20px 0;
+}
+.page-header {
+    width: 100%;
+    background: #ffb80f;
+    margin: 0;
+    padding: 0;
+}
+.banner-header {
+    width: 100%;
+    background: #ffb80f;
+    margin: 0;
+    padding: 0;
+}
+.ins-header {
+    width: 100px;
+    float: left;
+    left: 3%;
+    bottom: 20px;
+    position: relative;
+}
+.ins-p-head {
+    font-size: 2.2rem!important;
+}
+.ins-p-banner {
+    font-size: 1.5rem!important;
+}
+.ins-left .banner-header ,.ins-right .banner-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ins-description {
+    margin-top: 3%;
+    text-align: left;
+    display: inline-flex;
+    padding: 0 40px 0 20px;
+    float: left;
+}
+.ins-description img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+.ins-description-text {
+    display: flex;
+    flex-direction: column;
+}
+.ins-description-text ul {
+    list-style: none;
+    overflow-x: auto;
+    max-height: 340px;
+}
+.ins-description-text li {
+    padding-left: 5px;
+    font-size: 1rem;
+}
+.ins-description-text ul li::marker {
+    content: "✓";
+    color: rgba(30, 115, 190, 1);
+}
+.ins-center {
+    min-width: 640px;
+}
+.ins-left ,.ins-right {
+    max-width: 300px;
+    max-height: 610px;
+    min-width: 275px;
+    min-height: 610px;
+}
+.banner-body {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+.banner-body ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.banner-body ul a {
+    width: 95%!important;
+    color:#5a5a5a;
+    text-decoration: none;
+    font-weight: 700;
+    order: 2;
+}
+.banner-body ul li {
+    position: relative;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(235,232,235,1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(235,232,235,1);
+    box-shadow: 0px 3px 5px 0px rgba(235,232,235,1);
+}
+.banner-body button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0 5px 0 0;
+    border: solid 1px #ffb80f;
+    background-color: rgb(254 216 125);
+    filter: drop-shadow(-2px 1px 0px #ffb80f);
+    order: 1;
+}
+.banner-body button:hover {
+    right: 2px;
+    filter: none;
+}
+.banner-body ul li:hover {
+    background-color: rgb(254 216 125);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.banner-body ul li:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 15px solid white;
+    border-left: 15px solid #ffb80f;
+    width: 0;
+}
+.banner-body ul a:hover + button {
+    right: 2px;
+    filter: none;
+}
+.banner-body button i {
+    width: 20px;
+    height: 20px;
+    color: #5a5a5a;
+}
+.ins-advantages {
+    margin-top: 5%;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    background: rgb(254 216 125);
+    background: linear-gradient(0deg, rgb(228 228 228) 0%, rgba(9,9,121,0) 60%, rgba(0,212,255,0) 100%);
+}
+.ins-advantages ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.ins-advantages i {
+    font-size: 30px;
+    color: #ffb80f;
+}
+.ins-advantages p {
+    font-size: 1.5rem!important;
+    font-weight: 500;
+    margin: 0;
+    color: #5a5a5a;
+}
+.ins-advantages ul li {
+    border: solid 2px #fefefe;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    -webkit-box-shadow: 0px 0px 15px 0px #e0e0e0;
+    -moz-box-shadow: 0px 0px 15px 0px #e0e0e0;
+    box-shadow: 0px 0px 15px 0px #e0e0e0;
+}
+#infoAccordion {
+    border: solid 4px #ffb80f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 10px;
+}
+#infoHeader {
+    font-size: 1.9rem;
+    margin-top: 5%;
+    margin: 1% auto;
+    margin-bottom: 0;
+    width: 50%;
+    background: #ffb80f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.accordion-button:focus {
+    z-index: 3!important;
+    border-color: #feca86!important;
+    outline: 0!important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 183, 15, 0.135)!important;
+}
+.accordion-button:not(.collapsed) {
+    color: #4b4b4b;
+    background-color: #ffb70f22;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-body {
+    text-align: left;
+}
+.accordion-body .btn {
+    background-color: #ffb80f;
+    border: #4b4b4b;
+    color: #4b4b4b;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.ins-banner-socials img {
+    width: 20%;
+    order: 3;
+}
+.ins-banner-socials li {
+    padding: 5px;
+}
+.ins-banner-socials small {
+    font-size: 0.8rem;
+    color: #eba400;
+}
+.shadow-extender {
+    height: 50px;
+    background: linear-gradient(180deg, rgb(228 228 228) 0%, rgba(9,9,121,0) 60%, rgba(0,212,255,0) 100%);
+}
+.rec-s {
+    color: red!important;
+    display: contents;
+}
+
+/*PDF Viewer*/
+#Iframe-Master-CC-and-Rs {
+    max-width: 100%;
+    max-height: 100%; 
+    overflow: hidden;
+}
+
+.responsive-wrapper {
+    position: relative;
+    height: 0;
+    
+}
+
+.responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.responsive-wrapper-wxh-572x612 {
+    padding-bottom: 107%;
+}
+
+.set-border {
+    border: 5px inset #4f4f4f;
+}
+.set-box-shadow { 
+    -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+    -moz-box-shadow: 4px 4px 14px #4f4f4f;
+    box-shadow: 4px 4px 14px #4f4f4f;
+}
+.center-block-horiz {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.IframeAlt
+{display: none;}
+.cardBtns{
+    display: flex;
+    gap: 15px;
+}
+.flippedDesc
+{
+    
+}

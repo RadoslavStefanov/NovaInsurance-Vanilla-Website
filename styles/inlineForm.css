@@ -1,0 +1,133 @@
+.others-tab, .others-tab:before, .others-tab:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.others-tab form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+.others-tab h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 2.2rem!important;
+  color: rgb(34, 34, 34)!important;
+}
+.others-tab input[type="text"], .others-tab input[type="password"], .others-tab input[type="date"], .others-tab input[type="datetime"], .others-tab input[type="email"], .others-tab input[type="number"], .others-tab input[type="search"], .others-tab input[type="tel"], .others-tab input[type="time"], .others-tab input[type="url"], .others-tab textarea, .others-tab select {
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.others-tab input[type="text"], .others-tab input[type="password"], .others-tab input[type="email"], .others-tab textarea {
+  border-top: 2px solid #d2d9dd;
+}
+.others-tab input[type="text"]:focus, .others-tab input[type="password"]:focus, .others-tab input[type="email"]:focus, input[type="search"]:focus {
+  background: #d2d9dd;
+  border-radius: 30px;
+  border-top: none;
+}
+.others-tab textarea:focus {
+  background: #d2d9dd;
+}
+.others-tab input[type="radio"], .others-tab input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+.others-tab select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+.others-tab button {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  margin: 0 auto;
+  background: rgb(255,184,15);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid rgb(255,184,15);
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  transition: .4s;
+}
+.others-tab button:hover {
+  color: rgb(255,184,15);
+  width: 70%;
+  border-radius: 30px;
+  background: transparent;
+  border-width: 2px 2px 3px;
+  border-color: rgb(255,184,15);
+}
+.others-tab fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+.others-tab legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.others-tab label {
+  display: block;
+  margin-bottom: 8px;
+}
+.others-tab label.light {
+  font-weight: 300;
+  display: inline;
+}
+.others-tab .number {
+  background: rgb(255,184,15);
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 8px 5px 8px 20px;
+}
+@media screen and (min-width: 480px) {
+ .others-tab form {
+     max-width: 480px
+ }
+}
+@media screen and (min-width: 1024px) {
+  .others-tab form {
+     max-width: 960px
+ }
+  .others-tab fieldset {
+      position: relative;
+      float: left;
+      width: 45%;
+ }
+  .others-tab fieldset.profile {
+      width: 54%;
+      float: right;
+ }
+}
+.others-tab textarea {
+  margin-top:24px;
+  height: 140px;
+  min-height: 140px;
+  max-height: 495px;
+}

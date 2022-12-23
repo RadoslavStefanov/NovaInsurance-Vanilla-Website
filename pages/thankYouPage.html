@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zastrahovam.eu</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader-wrapper">
+        <div class="loader-item loader-1">
+          <i class="fa-solid fa-check material-icons loader-check-icon" style="font-size: 10rem;"></i>
+        </div>
+      </div>
+      <h2>Вашата информация е изпратена успешно! Благодарим Ви за обратната връзка</h2>
+      <h1>Ще бъдете пренасочени към основната страница след: <strong id="seconds">3</strong>
+        <p class="afterLabel">секунди!</p>
+      </h1>
+    </div>
+  </body>
+</html>
+<style>
+  h1 {
+    line-height: 1.7rem;
+    color: #01b35a;
+  }
+
+  .afterLabel {
+    line-height: 1.7rem;
+    color: #01b35a;
+    display: contents;
+  }
+
+  h2 {
+    color: gray;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .loader-container {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .loader-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loader-item {
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none;
+    font-size: 30px;
+    border: 3px solid #4361BA;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: 1s loader-animation linear infinite;
+    position: relative;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  @keyframes loader-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader-success-completed {
+    animation: none;
+    border-bottom-color: none;
+    border-color: #00b359;
+    border-width: 3px;
+    animation: fade-in-bck 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  .loader-failure-completed {
+    animation: none;
+    border-bottom-color: none;
+    border-color: #ff6666;
+    border-width: 3px;
+    animation: fade-in-bck 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  .loader-check-icon {
+    display: none;
+    font-size: 30px;
+  }
+
+  .loader-check-icon-completed {
+    display: block;
+    color: #00b359;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .loader-failure-icon {
+    display: none;
+    font-size: 30px;
+  }
+
+  .loader-failure-icon-completed {
+    display: block;
+    color: #ff6666;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+      transform: translateZ(80px);
+      opacity: 0;
+    }
+
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+</style>
+<script>
+  const loader1 = document.querySelector(".loader-1");
+  const loaderCheckIcon = document.querySelector(".loader-check-icon");
+  loader1.classList.toggle("loader-success-completed");
+  loaderCheckIcon.classList.toggle("loader-check-icon-completed");
+</script>
+<script>
+  window.addEventListener("load", (event) => {
+    var timeleft = 3;
+    var downloadTimer = setInterval(function() {
+      if (timeleft == 1) document.querySelector(".afterLabel").innerText = "секунда!";
+      if (timeleft <= 0) {
+        window.location.replace("http://zastrahovam.eu/");
+      } else {
+        document.getElementById("seconds").innerHTML = timeleft;
+      }
+      timeleft -= 1;
+    }, 1000);
+  });
+</script>
