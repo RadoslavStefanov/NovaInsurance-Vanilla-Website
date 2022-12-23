@@ -32,13 +32,12 @@ Here are a few pictures of the final product:
 ![image](https://user-images.githubusercontent.com/72268734/209375897-f2db984b-45b4-4136-b1f3-387d6e305fc3.png)
 ![image](https://user-images.githubusercontent.com/72268734/209375932-27c53f5c-3554-42fd-8e63-38f455d91b67.png)
 
-
-Here are some of the mobile screenshots:
+<br><br><br>
+Here are some of the mobile screenshots:<br><br>
 ![image](https://user-images.githubusercontent.com/72268734/209375995-c0a4c2da-f174-4ab1-8590-7a5d1db34c34.png)
 ![image](https://user-images.githubusercontent.com/72268734/209376018-994fdf6a-9d7e-4aad-8856-a79c9b778958.png)
 ![image](https://user-images.githubusercontent.com/72268734/209376053-184293a2-daea-43bc-bfd3-f2843128f7b5.png)
 ![image](https://user-images.githubusercontent.com/72268734/209376100-d8f89f05-ac00-4f73-8454-ea9a5191be37.png)
-![image](https://user-images.githubusercontent.com/72268734/209376824-8ba43a06-76b6-48a7-be99-77066172a0fa.png)
 
 
 
